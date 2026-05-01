@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState } from "react";
+import React, { lazy, Suspense, useState, useEffect } from "react";
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import VinylPlayer from "./components/VinylPlayer";
@@ -24,6 +24,15 @@ const SectionFallback = () => (
 const App = () => {
   useSmoothScroll(); // buttery smooth inertia scroll across the whole site
   const [showNewAbout, setShowNewAbout] = useState(false);
+
+  useEffect(() => {
+    // When switching between home and about, reset scroll to top
+    if (window.__lenis) {
+      window.__lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [showNewAbout]);
 
   return (
     // MusicProvider wraps EVERYTHING so the Audio object is never destroyed
