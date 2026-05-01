@@ -6,7 +6,7 @@ import { Particles } from "../components/Particles";
 // 1. Go to https://web3forms.com
 // 2. Enter abirmondal8926@gmail.com and click "Create Access Key"
 // 3. Check your Gmail inbox and copy the key, then paste it below
-const WEB3FORMS_KEY = "e91c1613-d687-4261-9a53-5cb30043ee7e";
+const WEB3FORMS_KEY = "57ef4344-e7ad-4abd-b769-2b66aa553405";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
