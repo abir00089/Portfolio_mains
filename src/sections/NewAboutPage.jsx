@@ -20,7 +20,7 @@ const NewAboutPage = ({ onBack }) => {
         </button>
       </div>
 
-      <div className="max-w-3xl mx-auto px-6 pt-12">
+      <div className="max-w-3xl mx-auto px-6 pt-32 md:pt-12">
         {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
