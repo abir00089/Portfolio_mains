@@ -8,7 +8,7 @@ const HeroText = () => {
     visible: { opacity: 1, x: 0 },
   };
   return (
-    <div className="z-10 absolute top-0 left-0 flex items-center justify-center w-full h-full md:left-[20vw] md:w-auto md:justify-start">
+    <div className="z-10 absolute top-0 left-0 flex items-center justify-start w-full h-full md:left-[20vw] md:w-auto">
       {/* Desktop View — capped at 48vw, sits right next to the astronaut */}
       <div className="flex-col hidden md:flex c-space max-w-[48vw]">
         <motion.h1
@@ -54,7 +54,7 @@ const HeroText = () => {
       </div>
 
       {/* Mobile View — constrained to left half so text never overlaps the 3D astronaut */}
-      <div className="flex flex-col items-start w-[48%] space-y-3 text-left md:hidden c-space relative -top-[15vh]">
+      <div className="flex flex-col items-start w-[55%] space-y-3 text-left md:hidden c-space relative -top-[31vh]">
         <motion.p
           className="text-xl font-medium text-white"
           variants={variants}
