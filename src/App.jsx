@@ -1,5 +1,5 @@
 import React, { lazy, Suspense, useState } from "react";
-import Navbar from "./sections/navbar";
+import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
 import VinylPlayer from "./components/VinylPlayer";
 import useSmoothScroll from "./hooks/useSmoothScroll";
