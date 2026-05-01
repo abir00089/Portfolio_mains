@@ -53,10 +53,10 @@ const HeroText = () => {
         </div>
       </div>
 
-      {/* Mobile View */}
-      <div className="flex flex-col items-start w-full space-y-3 text-left md:hidden c-space relative -top-[20vh]">
+      {/* Mobile View — constrained to left half so text never overlaps the 3D astronaut */}
+      <div className="flex flex-col items-start w-[48%] space-y-3 text-left md:hidden c-space relative -top-[15vh]">
         <motion.p
-          className="text-2xl font-medium text-white"
+          className="text-xl font-medium text-white"
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -66,7 +66,7 @@ const HeroText = () => {
         </motion.p>
         <div>
           <motion.p
-            className="text-2xl font-black text-neutral-300"
+            className="text-xl font-black text-neutral-300"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -82,11 +82,11 @@ const HeroText = () => {
           >
             <FlipWords
               words={words}
-              className="font-bold text-white text-3xl"
+              className="font-bold text-white text-2xl"
             />
           </motion.div>
           <motion.p
-            className="text-2xl font-black text-neutral-300"
+            className="text-xl font-black text-neutral-300"
             variants={variants}
             initial="hidden"
             animate="visible"
